@@ -1,0 +1,219 @@
+Starting
+Wed Apr 12 17:38:42 EDT 2023
+Number of images per class in the training dataset:
+Class Tomato___Tomato_mosaic_virus: 1790
+Class Tomato___Leaf_Mold: 1882
+Class Tomato___healthy: 1926
+Class Tomato___Spider_mites_Two-spotted_spider_mite: 1741
+Class Tomato___Septoria_leaf_spot: 1745
+Class Tomato___Early_blight: 1920
+Class Tomato___Target_Spot: 1827
+Class Tomato___Late_blight: 1851
+Class Tomato___Tomato_Yellow_Leaf_Curl_Virus: 1961
+Class Tomato___Bacterial_spot: 1702
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 1/10 - Loss: 2.2208 Acc: 0.1581
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 2.0323 Acc: 0.2454 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[19, 265, 0, 21, 9, 0, 0, 108, 2, 1]
+[15, 244, 0, 143, 0, 0, 0, 64, 8, 6]
+[13, 115, 2, 113, 36, 0, 0, 71, 29, 84]
+[1, 83, 0, 262, 45, 0, 0, 34, 21, 24]
+[0, 11, 0, 94, 98, 0, 0, 104, 82, 47]
+[4, 121, 0, 195, 34, 0, 0, 40, 24, 17]
+[0, 125, 0, 244, 5, 0, 0, 15, 52, 16]
+[6, 112, 0, 35, 6, 0, 0, 329, 2, 0]
+[1, 63, 0, 179, 38, 0, 0, 16, 96, 55]
+[13, 51, 8, 212, 17, 0, 0, 73, 32, 75]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 2/10 - Loss: 1.8791 Acc: 0.2813
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 1.7554 Acc: 0.3086 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[47, 205, 0, 5, 22, 3, 0, 142, 0, 1]
+[16, 284, 0, 23, 8, 13, 24, 109, 3, 0]
+[16, 85, 18, 87, 89, 11, 24, 94, 32, 7]
+[0, 67, 0, 216, 93, 27, 10, 39, 18, 0]
+[0, 16, 0, 48, 224, 13, 21, 67, 47, 0]
+[8, 73, 3, 54, 92, 49, 32, 113, 11, 0]
+[0, 171, 1, 85, 17, 34, 102, 33, 14, 0]
+[16, 76, 0, 1, 11, 1, 2, 383, 0, 0]
+[0, 3, 0, 245, 68, 0, 44, 0, 88, 0]
+[2, 56, 14, 216, 108, 2, 38, 31, 10, 4]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 3/10 - Loss: 1.6701 Acc: 0.3625
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 1.6013 Acc: 0.3959 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[181, 111, 19, 1, 31, 4, 2, 73, 0, 3]
+[68, 236, 1, 6, 10, 77, 25, 52, 4, 1]
+[22, 79, 106, 18, 125, 43, 11, 37, 11, 11]
+[1, 60, 6, 187, 126, 61, 7, 12, 9, 1]
+[0, 14, 15, 19, 297, 44, 6, 26, 14, 1]
+[7, 78, 38, 31, 117, 109, 18, 32, 5, 0]
+[1, 137, 1, 28, 30, 84, 101, 5, 42, 28]
+[63, 71, 4, 1, 13, 21, 5, 312, 0, 0]
+[0, 0, 8, 173, 105, 0, 1, 0, 155, 6]
+[12, 31, 17, 72, 117, 1, 39, 5, 56, 131]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 4/10 - Loss: 1.5166 Acc: 0.4487
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 1.4661 Acc: 0.4702 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[230, 23, 46, 1, 14, 3, 3, 102, 0, 3]
+[96, 129, 98, 7, 3, 40, 29, 72, 4, 2]
+[10, 22, 293, 3, 37, 34, 13, 27, 16, 8]
+[1, 19, 58, 117, 65, 91, 17, 21, 73, 8]
+[1, 11, 107, 4, 158, 52, 10, 40, 45, 8]
+[0, 14, 165, 18, 65, 113, 22, 23, 11, 4]
+[4, 72, 39, 11, 7, 70, 176, 7, 15, 56]
+[36, 23, 43, 11, 8, 9, 1, 359, 0, 0]
+[0, 0, 22, 30, 44, 1, 6, 0, 335, 10]
+[22, 10, 56, 7, 28, 1, 69, 1, 41, 246]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 5/10 - Loss: 1.3306 Acc: 0.5211
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 1.2690 Acc: 0.5415 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[250, 34, 3, 8, 14, 1, 6, 104, 0, 5]
+[75, 160, 11, 15, 4, 62, 69, 79, 2, 3]
+[7, 52, 123, 24, 56, 71, 32, 34, 35, 29]
+[0, 17, 1, 189, 76, 70, 38, 25, 38, 16]
+[3, 10, 9, 13, 210, 43, 47, 31, 54, 16]
+[0, 30, 12, 32, 62, 197, 73, 17, 10, 2]
+[2, 22, 0, 6, 8, 28, 319, 8, 7, 57]
+[28, 19, 0, 19, 11, 35, 6, 372, 0, 0]
+[0, 0, 0, 34, 38, 0, 11, 0, 322, 43]
+[9, 3, 1, 10, 9, 1, 90, 0, 17, 341]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 6/10 - Loss: 1.1701 Acc: 0.5835
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 1.1458 Acc: 0.5834 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[302, 9, 11, 8, 1, 0, 3, 88, 0, 3]
+[107, 190, 52, 13, 4, 44, 24, 41, 3, 2]
+[14, 49, 238, 27, 33, 29, 6, 15, 36, 16]
+[1, 21, 11, 298, 27, 46, 7, 28, 28, 3]
+[3, 13, 27, 49, 182, 24, 20, 35, 77, 6]
+[4, 25, 80, 65, 27, 165, 29, 16, 24, 0]
+[12, 61, 1, 21, 18, 30, 266, 8, 32, 8]
+[61, 10, 33, 22, 3, 18, 0, 343, 0, 0]
+[0, 0, 0, 30, 13, 1, 12, 0, 392, 0]
+[12, 18, 13, 17, 4, 0, 83, 0, 35, 299]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 7/10 - Loss: 1.0406 Acc: 0.6354
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 1.0064 Acc: 0.6478 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[257, 44, 19, 2, 1, 0, 15, 84, 0, 3]
+[43, 273, 15, 6, 0, 54, 47, 34, 4, 4]
+[6, 84, 186, 12, 22, 52, 19, 18, 30, 34]
+[1, 17, 23, 241, 17, 81, 17, 17, 28, 28]
+[3, 23, 26, 25, 191, 27, 33, 34, 51, 23]
+[0, 22, 4, 10, 8, 292, 62, 6, 29, 2]
+[0, 15, 2, 3, 9, 25, 350, 2, 24, 27]
+[39, 18, 4, 7, 6, 66, 2, 348, 0, 0]
+[0, 0, 0, 0, 5, 4, 20, 0, 414, 5]
+[4, 4, 8, 3, 1, 1, 30, 0, 12, 418]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 8/10 - Loss: 0.9476 Acc: 0.6723
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 0.9190 Acc: 0.6809 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[254, 43, 21, 4, 1, 0, 11, 86, 0, 5]
+[32, 296, 36, 15, 1, 27, 43, 24, 3, 3]
+[4, 69, 214, 41, 15, 34, 14, 19, 21, 32]
+[1, 18, 10, 355, 2, 30, 12, 12, 15, 15]
+[6, 21, 32, 97, 160, 11, 32, 24, 34, 19]
+[0, 12, 15, 44, 0, 288, 52, 4, 19, 1]
+[0, 14, 2, 12, 1, 26, 363, 0, 5, 34]
+[22, 16, 8, 18, 1, 40, 0, 385, 0, 0]
+[0, 0, 0, 8, 2, 18, 20, 0, 375, 25]
+[0, 5, 8, 7, 0, 2, 22, 4, 1, 432]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 9/10 - Loss: 0.8725 Acc: 0.6986
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 0.8385 Acc: 0.7149 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[322, 15, 15, 3, 5, 0, 3, 58, 0, 4]
+[60, 261, 48, 19, 6, 25, 30, 23, 3, 5]
+[10, 62, 237, 28, 33, 31, 0, 20, 21, 21]
+[3, 15, 12, 349, 21, 19, 9, 11, 17, 14]
+[4, 9, 15, 44, 290, 3, 12, 11, 38, 10]
+[1, 8, 16, 57, 12, 269, 38, 10, 23, 1]
+[4, 18, 2, 12, 21, 32, 310, 3, 29, 26]
+[40, 4, 10, 14, 2, 29, 0, 391, 0, 0]
+[0, 1, 0, 9, 7, 4, 1, 0, 415, 11]
+[1, 5, 8, 7, 1, 1, 16, 4, 4, 434]
+/home/tnchau/Tomato_Disease/CNN.py:151: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  conf_matrix = np.zeros((num_classes, num_classes), dtype=np.int)
+Epoch 10/10 - Loss: 0.8191 Acc: 0.7171
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/lib/function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/tnchau/.conda/envs/disease_detection/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Validation - Loss: 0.8242 Acc: 0.7219 Precision: nan Recall: nan F1: nan
+Confusion Matrix:
+[335, 7, 10, 2, 6, 0, 6, 52, 0, 7]
+[84, 239, 20, 8, 7, 34, 45, 34, 3, 6]
+[16, 60, 215, 15, 51, 36, 2, 27, 11, 30]
+[5, 10, 12, 290, 64, 28, 11, 12, 14, 24]
+[4, 4, 8, 33, 317, 8, 12, 7, 23, 20]
+[3, 4, 5, 12, 8, 308, 48, 17, 26, 4]
+[0, 5, 2, 5, 8, 33, 329, 4, 15, 56]
+[42, 1, 4, 4, 5, 24, 1, 409, 0, 0]
+[0, 1, 1, 1, 8, 8, 2, 0, 409, 18]
+[1, 1, 8, 2, 0, 0, 6, 4, 0, 459]
+
+real	70m37.958s
+user	1659m38.660s
+sys	39m2.638s
+Finished
+Wed Apr 12 18:49:20 EDT 2023
