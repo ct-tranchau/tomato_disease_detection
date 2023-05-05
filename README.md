@@ -10,3 +10,7 @@ Keras 2.4.3 or higher  <br>
 NumPy <br>
 Matplotlib <br>
 Scikit-learn <br>
+
+
+## Results
+Our experiments show that ResNet18 outperforms the other models with an overall accuracy of 98.4% on the test set. We also explore transfer learning to fine-tune pre-trained models, which improves the accuracy of the models by up to 99.69%.
