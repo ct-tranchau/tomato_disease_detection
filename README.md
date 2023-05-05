@@ -6,7 +6,7 @@ This project explores the use of deep learning models for the early and accurate
 ## Requirements
 Python 3.7 or higher \
 TensorFlow 2.4 or higher \ 
-Keras 2.4.3 or higher \
+Keras 2.4.3 or higher  \
 NumPy \
 Matplotlib \
 Scikit-learn \
